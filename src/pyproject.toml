@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airbnb-serving"
+version = "0.1.0"
+description = "ML serving layer"
+requires-python == ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "mlflow",
+    "scikit-learn",
+    "pandas",
+    "pydantic",
+    "python-dotenv"
+]
+
+[tool.setuptools]
+package-dir == {"" = "src"}
